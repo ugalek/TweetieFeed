@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AttributedText",
+        "repositoryURL": "https://github.com/gonzalezreal/AttributedText",
+        "state": {
+          "branch": null,
+          "revision": "c345033e22d5a1cd0e9fe0ec405cc809a8349586",
+          "version": "0.3.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
