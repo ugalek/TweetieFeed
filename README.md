@@ -24,7 +24,7 @@ Add the package to `Package.swift` dependencies:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ugalek/TweetieFeed.git", from: "1.0.0")
+    .package(url: "https://github.com/ugalek/TweetieFeed.git", from: "0.1.0")
 ]
 ```
 
