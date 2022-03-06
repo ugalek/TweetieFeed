@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import TweetieFeed
 
 @main
 struct ExampleApp: App {
+    @StateObject var uiSettings = TweetieFeedUISettings(footerTextColor: .cyan)
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: ExampleViewModel())
+                .environmentObject(uiSettings)
         }
     }
 }

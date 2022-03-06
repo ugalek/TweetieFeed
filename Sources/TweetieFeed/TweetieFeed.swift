@@ -1,3 +1,10 @@
+//
+//  TweetieFeed.swift
+//
+//
+//  Created by Galina on 25/02/2022.
+//
+
 import SwiftUI
 
 /// This view is a container that displays twitter feed

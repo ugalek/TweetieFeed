@@ -11,6 +11,8 @@
 		053E336327D5138700C93B64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E336227D5138700C93B64 /* ContentView.swift */; };
 		053E336527D5138800C93B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 053E336427D5138800C93B64 /* Assets.xcassets */; };
 		053E336827D5138800C93B64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 053E336727D5138800C93B64 /* Preview Assets.xcassets */; };
+		05C39D9627D51E3800EEB6BF /* TweetieFeed in Frameworks */ = {isa = PBXBuildFile; productRef = 05C39D9527D51E3800EEB6BF /* TweetieFeed */; };
+		05C39D9827D51E6600EEB6BF /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C39D9727D51E6600EEB6BF /* ExampleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		053E336227D5138700C93B64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		053E336427D5138800C93B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		053E336727D5138800C93B64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05C39D9327D51E2200EEB6BF /* TweetieFeed */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TweetieFeed; path = ../..; sourceTree = "<group>"; };
+		05C39D9727D51E6600EEB6BF /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C39D9627D51E3800EEB6BF /* TweetieFeed in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +40,10 @@
 		053E335427D5138700C93B64 = {
 			isa = PBXGroup;
 			children = (
+				05C39D9227D51E2200EEB6BF /* Packages */,
 				053E335F27D5138700C93B64 /* Example */,
 				053E335E27D5138700C93B64 /* Products */,
+				05C39D9427D51E3800EEB6BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				053E336027D5138700C93B64 /* ExampleApp.swift */,
+				05C39D9727D51E6600EEB6BF /* ExampleViewModel.swift */,
 				053E336227D5138700C93B64 /* ContentView.swift */,
 				053E336427D5138800C93B64 /* Assets.xcassets */,
 				053E336627D5138800C93B64 /* Preview Content */,
@@ -65,6 +73,21 @@
 				053E336727D5138800C93B64 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		05C39D9227D51E2200EEB6BF /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				05C39D9327D51E2200EEB6BF /* TweetieFeed */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		05C39D9427D51E3800EEB6BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +106,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				05C39D9527D51E3800EEB6BF /* TweetieFeed */,
+			);
 			productName = Example;
 			productReference = 053E335D27D5138700C93B64 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				053E336327D5138700C93B64 /* ContentView.swift in Sources */,
+				05C39D9827D51E6600EEB6BF /* ExampleViewModel.swift in Sources */,
 				053E336127D5138700C93B64 /* ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +366,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05C39D9527D51E3800EEB6BF /* TweetieFeed */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TweetieFeed;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 053E335527D5138700C93B64 /* Project object */;
 }
