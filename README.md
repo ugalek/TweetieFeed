@@ -4,7 +4,7 @@
 [![Platforms](https://img.shields.io/badge/platform-iOS-blue.svg?longCache=true&style=flat-square)](https://www.apple.com)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?longCache=true&style=flat-square)](https://en.wikipedia.org/wiki/MIT_License)
 
-**TweetieFeed is a SwiftUI component to display Twitter feeds.**
+**Twitter feeds for SwiftUI**
 
 Supports:
 
