@@ -38,6 +38,11 @@ public class TweetieFeedUISettings: ObservableObject {
     public let tweetBodyCornerRadius: CGFloat
     
     public let localeIdentifier: String
+    
+    /**
+     The style of the `List`. Defaults to `.plainListStyle`.
+     */
+    public let listStyle: CustomListStyle
 
     public init(backgroundDark: Color = Color(red: 8 / 255, green: 21 / 255, blue: 38 / 255),
                 backgroundLight: Color = Color(red: 228 / 255, green: 232 / 255, blue: 240 / 255),
@@ -48,7 +53,8 @@ public class TweetieFeedUISettings: ObservableObject {
                 retweetedStatusTextColor: Color = Color.secondary,
                 footerTextColor: Color = Color.gray,
                 tweetBodyCornerRadius: CGFloat = 15,
-                localeIdentifier: String = "en_US") {
+                localeIdentifier: String = "en_US",
+                listStyle: CustomListStyle = CustomListStyle.plainListStyle) {
         self.backgroundDark = backgroundDark
         self.backgroundLight = backgroundLight
         self.tweetBackgroundDark = tweetBackgroundDark
@@ -59,5 +65,48 @@ public class TweetieFeedUISettings: ObservableObject {
         self.footerTextColor = footerTextColor
         self.tweetBodyCornerRadius = tweetBodyCornerRadius
         self.localeIdentifier = localeIdentifier
+        self.listStyle = listStyle
+    }
+}
+
+public extension TweetieFeedUISettings {
+    enum CustomListStyle {
+        
+        /**
+         Translates into [DefaultListStyle](https://developer.apple.com/documentation/swiftui/defaultliststyle ).
+         */
+        case defaultListStyle
+        
+        /**
+         Translates into [PlainListStyle](https://developer.apple.com/documentation/swiftui/plainliststyle)
+         */
+        case plainListStyle
+        
+        /**
+         Translates into [GroupedListStyle](https://developer.apple.com/documentation/swiftui/groupedliststyle ).
+         */
+        case groupedListStyle
+        
+        /**
+         **iOS 14.0 and above only.** Otherwise, defaults to `defaultListStyle`.
+         
+         Translates into [InsetGroupedListStyle](https://developer.apple.com/documentation/swiftui/insetgroupedliststyle ).
+         */
+        case insetGroupedListStyle
+        
+        /**
+         **iOS 14.0 and above only.** Otherwise, defaults to `defaultListStyle`.
+         
+         Translates into [InsetListStyle](https://developer.apple.com/documentation/swiftui/insetliststyle ).
+         */
+        case insetListStyle
+        
+        /**
+         **iOS 14.0 and above only.** Otherwise, defaults to `defaultListStyle`.
+         
+         Translates into [SidebarListStyle](https://developer.apple.com/documentation/swiftui/sidebarliststyle ).
+         */
+        case sidebarListStyle
+        
     }
 }

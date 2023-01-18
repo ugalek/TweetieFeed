@@ -17,7 +17,7 @@ let package = Package(
         .package(
             name: "AttributedText",
             url: "https://github.com/gonzalezreal/AttributedText",
-            from: "0.3.0"
+            from: "1.0.1"
         ),
     ],
     targets: [

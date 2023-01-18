@@ -50,7 +50,7 @@ public struct TweetieFeedView: View {
                         }
                         .listRowBackground(colorScheme == .dark ? uiSettings.backgroundDark : uiSettings.backgroundLight)
                     }
-                    .listStyle(.grouped)
+                    .listStyle(for: uiSettings.listStyle)
                 } else {
                     Text("No data to display")
                 }
