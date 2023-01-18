@@ -24,7 +24,7 @@ Add the package to `Package.swift` dependencies:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ugalek/TweetieFeed.git", from: "0.1.0")
+    .package(url: "https://github.com/ugalek/TweetieFeed.git", from: "0.2.0")
 ]
 ```
 
@@ -66,6 +66,7 @@ Parameter                  | Description
 `footerTextColor`          | Color.gray by default: change text in the footer *(retweet & favorite)*
 `tweetBodyCornerRadius`    | CGFloat 15 by default: change corner radius tweet card
 `localeIdentifier`         | String by default "en_US": change locale to display the date
+`listStyle`                | The style of the `List`. Defaults to `.plainListStyle`
 
 
 In your view model, use `TweetieFeedDecoder` to decode the data according the API version:
